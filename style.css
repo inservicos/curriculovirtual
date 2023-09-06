@@ -9,7 +9,7 @@
 html,body{
     background-image:  url('imagens/fundo.png'),linear-gradient(-35deg, #000152,#191DFF);   
     background-repeat: no-repeat;
-        
+    height:100%;    
 }
 
     article#foto{
