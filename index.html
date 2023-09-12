@@ -3,59 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/letra2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imagens/ico-favicon.png" type="image/x-icon">
     <title>Curriculo Virtual</title>
 </head>
-<body  >
-    <main >
-            <article id="foto" >
+<body >
+    <section id="container-box1">
+        <article id="box">
+            <article id="desc_prof">
+                <h1><em>DIEGO NUNES SANTOS</em></h1>
+                <h2>DESENVOLVEDOR FRONT-END</h2>
+                <p><em>HTML - CSS - JAVASCRIPT</em></p>
+            </article>
+            <article id="desc_foto">
                 <picture>
-                    <source media="(max-width: 600px)" srcset="./imagens/foto_perfil-peq.png" type="image/png">
-                    
-                    <img  src="./imagens/foto_perfil-med.png" alt="">
+                    <source media="(max-width: 650px )" srcset="./imagens/foto_diego_peq.png" type="image/png">
+                    <img src="./imagens/foto_diego.png" alt="">
                 </picture>
             </article>
-            <article id="sobremim">
-                <div id="fec" onclick="fechar()" >X</div>
-                    <h1 id="dadosh1">
-                        UM POUCO
-                    </h1>
-                    <h2 id="dadosh2">Sobre mim</h2>
-                    <p id="dadosp">
-                        Morador da Grande Vitória, casado, dois filhos, Trabalhando como design gráfico desde 2004. Desde criança sempre fui curioso , gosto muito de desafios, games com muita dificuldade, construir coisas (marcenaria), atividades onde trabalha muito com a inteligência. 
-                    </p>
-                    <P id="dadosp2">    
-                        Sempre tive a vontade de aprender como era o funcionamento na parte de programação, só não imaginei que era algo tão estático, bom,e que dá gosto de trabalhar, comecei os meus estudos em desenvolvimento em 2021 e hoje sou apaixonado por essa área, principalmente a parte de desenvolvimento Web, onde eu consigo  unir duas paixões que são Criar design gráfico e montar o site com o máximo de interatividade que eu conseguir. estou na correndo atrás de me desenvolver cada vez mais, espero um dia me tornar um programador de excelente reputação.
-                    </P>
-                </article>
-            <article id="cabecalho">                
-                <h1>Diego Nunes Santos</h1>
-                <h2>DESENVOLVEDOR FRONT-END</h2>
-                <p>HTML - CSS - JAVASCRIPT </p>
-                <article id="redeSocial">
+        </article>
+    </section>
+    <article id="redesocial">
+        <span id="rede_insta">
+            <a href="https://www.instagram.com/dns_developer/" target="_blank">
+
+                <img id="rede-instag" src="./imagens/insta_cinza.png" alt="instagram"  onmouseenter="entraInsta()" onmouseout="saiInsta()">
+            </a>
+            </span>
+        <span id="rede_linke" >
+            <a href="https://www.linkedin.com/in/diego-nunes-santos-489481220/" target="_blank">
+
+                <img id="rede_linked" src="./imagens/linke_cinza.png" alt="linkedin" onmouseenter="entraLinke()" onmouseout="saiLinke()">
+            </a>
+        </span>
+        <span id="rede_zap">
+            <a href="https://wa.me/5527995321787?text=Ol%C3%A1%2C+estou+entrado+em+contato%2C+porque+dei+uma+olhada+na+sua+apresenta%C3%A7%C3%A3o."target="_blank">
+                <img id="rede_wzap" src="./imagens/zap_cinza.png" alt="whatsapp" onmouseenter="entraZap()" onmouseout="saiZap()">
+
+            </a>
+        </span>
+
+    </article>
+    <article id="projeto">        
+        <img src="./imagens/projetos.png" alt=""  >
+    </article>
+    <!--***** Carrossel *****-->
+    <article>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href="https://ddiegosantos.github.io/manosgame/" target="_blank">
+                        <picture>
+                            <source media="(max-width: 600px)" srcset="./imagens/carossel_manos_peq.png" type="image/png">
+                            <img src="./imagens/carossel_manos.png" class="d-block w-100" alt="...">
+                        </picture>
+                </a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ddiegosantos.github.io/producao/" target="_blank">
                     <picture>
-                        <a href="https://wa.me/5527995321787?text=Ol%C3%A1%2C+estou+entrado+em+contato%2C+porque+dei+uma+olhada+na+sua+apresenta%C3%A7%C3%A3o."target="_blank"><img  src="imagens/zap.png" alt="whatsapp" ></a>
-                        <a href="https://www.instagram.com/dns_developer/" target="_blank"><img src="imagens/insta.png" alt="instagram" ></a>
-                        <a href="https://www.linkedin.com/in/diego-nunes-santos-489481220/" target="_blank"><img src="imagens/linkdin.png" alt="linkedIn" ></a>
+                        <source media="(max-width: 600px)" srcset="./imagens/corte_liga_peq.png" type="image/png">
+                        <img src="./imagens/corte_liga.png" class="d-block w-100" alt="...">
                     </picture>
-                </article>  
-                <section id="trabalhos" >
-                    <article id="git">
-                        <a href="projetos.html"><img src="./imagens/git.png" alt=""> <p>PROJETOS</p> </a>
-                        
-                    </article>
-                    <article id="formacao">
-                        <a href="cursos.html"> <img src="./imagens/capela.png" alt=""><p>FORMAÇÃO ACADÊMICA</p></a>
-                    </article>
-                </section>
-            </article>
-         <div id="botSM"onclick="aparecer()" >Sobre Mim</div>
+                </a>
+                
+                </div>
+              <div class="carousel-item">
+                <a href="https://ddiegosantos.github.io/bergamin/" target="_blank"><picture>
+                    <source media="(max-width: 600px)" srcset="./imagens/motoboy_peq.png" type="image/png">
+                    <img src="./imagens/motoboy.png" class="d-block w-100" alt="...">
+                </picture></a>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </article>
 
-
-    </main>
+    <!-- Formação   -->
+    <section id="cursos-grid">
+        <article  id="formacaocursos">
+            <h1>FORMAÇÃO</h1>
+            <img src="./imagens/descomplica.png" alt="">
+            <img src="./imagens/multivix.png" alt="">
+            <img  src="./imagens/cedetec.png" alt="">
+            
+        </article>
+        
+        <article  id="cursos-online">
+            <h1>CURSOS</h1><br>
+            <p>concluidos</p>
+            <img src="./imagens/html5.png" alt="">
+            <img src="./imagens/css3.png" alt="">
+            <img  src="./imagens/javascript.png" alt="">
+            <img  src="./imagens/mysql.png" alt="">
+            <img src="./imagens/CorelDRAW-Logo.wine.svg" alt="">
+            <img src="./imagens/excel-logo-0.png" alt="">
+            <img src="./imagens/adobe-photoshop-logo-0.png" alt="">
     
-   
+            <p>cursando</p>
+            <img src="./imagens/react.png" alt="">
+            <img src="./imagens/node.png" alt="">
+            <img  src="./imagens/php.png" alt="">
+            
+            
+        </article>
+    </section>
+
     
 </body>
 <script src="perfil.js"></script>
